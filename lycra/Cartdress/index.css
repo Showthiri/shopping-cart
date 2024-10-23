@@ -1,0 +1,163 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  z-index: 1000; /* Keep navbar above other content */
+} 
+.navbar-brand img{
+  height: 30px;
+}
+
+.home {
+  background-image: url("https://3.bp.blogspot.com/-dx9Kn-Cfsk8/XXoXuo3REbI/AAAAAAAAOQI/DxDv7czuK-oDUlOw84mef2zQIGXbh-9rwCLcBGAsYHQ/w1200-h630-p-k-no-nu/mens-trends_feature.jpg");
+  padding: 100px 20px; /* Padding for the hero section */
+  text-align: center;
+}
+
+.home h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem; /* Large heading */
+}
+
+.home button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 120px;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 300px; /* Prevents the boxes from getting too small */
+  margin: 10px;
+}
+.big-img{
+  display: flex;
+  justify-content: center;
+}
+
+.big-img img {
+  max-width: 100%; /* Ensures image scales */
+  /* height: auto; */
+  height: 30%;
+   /* Maintain aspect ratio */
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.small-img img {
+  width: 60px;
+  /* width: 60px; Fixed size for thumbnails */
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+
+.size {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.psize {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.psize.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-box {
+  margin-top: 15px;
+ 
+}
+.cart-btn{
+  padding: 10px;
+  background-color: green;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.buy-btn{
+  padding: 10px;
+  background-color:coral;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .flex-box {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items */
+  }
+  .right{
+    align-items: center;
+  }
+
+  .left, .right {
+      width: 100%; /* Full width on small screens */
+      margin: 5px 0; /* Vertical spacing */
+  }
+
+  .home h1 {
+      font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  .home button {
+      font-size: 0.9rem; /* Smaller button on mobile */
+  }
+}
+.t img{
+  height: 290px;
+  width: 250px;
+}
+.para {
+  padding-top: 20px;
+  text-align: center;
+}
+.para button{
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  height: 30px;
+  border: none;
+
+}
+.para p{
+  color: red;
+}
+.para1{
+  align-items: center;
+  font-weight: bold;
+}
